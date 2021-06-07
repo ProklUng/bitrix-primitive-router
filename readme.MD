@@ -13,7 +13,7 @@ composer.json:
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/proklung/bitrix.primitive.router"
+            "url": "https://github.com/proklung/bitrix-primitive-router"
         }
     ]
 ```
