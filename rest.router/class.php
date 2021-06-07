@@ -7,11 +7,6 @@ use Bitrix\Main\SystemException;
 class RestRouterComponent extends CBitrixComponent
 {
     /**
-     * @var string $NAMESPACES_REST_CLASSES
-     */
-    private $NAMESPACES_REST_CLASSES = '\Local\Rest\\';
-
-    /**
      * @var string[] $statusCodes
      */
     protected static $statusCodes = [
@@ -50,7 +45,7 @@ class RestRouterComponent extends CBitrixComponent
             );
 
             $explodedMethod = explode('::', $requestedMethod);
-            $class = $this->NAMESPACES_REST_CLASSES . $explodedMethod[0];
+            $class = $explodedMethod[0];
             $method = str_replace('()', '', $explodedMethod[1]);
 
             if (method_exists($class, $method)) {
