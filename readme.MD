@@ -27,7 +27,7 @@ composer require proklung/bitrix-primitive-router
 В `/bitrix/components/base/` прилетят два компонента: `base.router` и `rest.router`
 
 ```php
-$APPLICATION->IncludeComponent('base:base.router', '', array(
+$APPLICATION->IncludeComponent('bitrix-primitive-router:base.router', '', array(
     "CACHE_TYPE" => "A",
     "CACHE_TIME" => 3600,
     "SEF_FOLDER" => '/article/',
@@ -40,7 +40,7 @@ $APPLICATION->IncludeComponent('base:base.router', '', array(
 ```
 
 ```php
-$APPLICATION->IncludeComponent('base:rest.router', '', [
+$APPLICATION->IncludeComponent('bitrix-primitive-router:rest.router', '', [
     'SEF_FOLDER' => '/rest/',
     'SEF_URL_PATHS' =>[
       'article/get-list/' => 'Article::getlist()',

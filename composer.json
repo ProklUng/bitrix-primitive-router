@@ -20,7 +20,7 @@
   },
   "extra": {
     "installer-paths": {
-      "./bitrix/components/base/": ["type:bitrix-d7-component", "type:bitrix-component"]
+      "./bitrix/components/{$name}/": ["type:bitrix-d7-component", "type:bitrix-component"]
     }
   }
 }
