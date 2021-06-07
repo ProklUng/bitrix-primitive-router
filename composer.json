@@ -1,7 +1,7 @@
 {
   "name": "proklung/bitrix-primitive-router",
   "description": "Primitive router for Bitrix",
-  "type": "library",
+  "type": "bitrix-component",
   "license": "MIT",
   "authors": [
     {
@@ -13,11 +13,6 @@
   "support": {
     "issues": "https://github.com/ProklUng/bitrix-primitive-router/issues",
     "source": "https://github.com/ProklUng/bitrix-primitive-router"
-  },
-  "autoload": {
-    "psr-4": {
-      "Prokl\\ContainerLocatorBundle\\": ""
-    }
   },
   "require": {
     "php": ">=7.1 | ~8"
