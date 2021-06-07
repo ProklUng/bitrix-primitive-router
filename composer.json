@@ -1,0 +1,30 @@
+{
+  "name": "proklung/bitrix-primitive-router",
+  "description": "Primitive router for Bitrix",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gavrilov Fedy",
+      "email": "fedor.gavrilov.75@mail.ru"
+    }
+  ],
+
+  "support": {
+    "issues": "https://github.com/ProklUng/bitrix-primitive-router/issues",
+    "source": "https://github.com/ProklUng/bitrix-primitive-router"
+  },
+  "autoload": {
+    "psr-4": {
+      "Prokl\\ContainerLocatorBundle\\": ""
+    }
+  },
+  "require": {
+    "php": ">=7.1 | ~8"
+  },
+  "extra": {
+    "installer-paths": {
+      "./bitrix/components/{$name}/": ["type:bitrix-d7-component", "type:bitrix-component"]
+    }
+  }
+}
